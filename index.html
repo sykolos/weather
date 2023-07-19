@@ -95,7 +95,11 @@
 
         output = "<h1>" + city + "<br>Jelenlegi időjárás:</h1>";
         output +=
-          "<div id='conditions'><h2>" + kToF(currentTemp) + "&#8451;</h2>";
+          "<div id='conditions'><h2>" +
+          kToF(currentTemp) +
+          "&#8451;</h2><br><h3>Égbolt: " +
+          description +
+          "</h3>";
         output +=
           "<div id='detail'><div id='temp'><h3>Hőérzet: " +
           kToF(feelsLike) +
@@ -110,10 +114,8 @@
           " Km/h</h3>";
         output += "<h3>Napfelkelte: " + convertTime(sunrise) + "</h3>";
         output += "<h3>Napnyugta: " + convertTime(sunset) + "</h3>";
-        output += "<h3>Égbolt: " + description + "</h3";
+
         output += "</div></div>";
-        console.log(output);
-        console.log(description);
 
         document.getElementById("weather").innerHTML = output;
       };
