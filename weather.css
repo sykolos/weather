@@ -1,0 +1,10 @@
+#weather {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
+#detail {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
